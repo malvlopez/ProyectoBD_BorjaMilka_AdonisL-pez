@@ -70,4 +70,39 @@ create table historias_clinicas (
 ) engine=innodb;
 
 
---
+-- tabla usuarios
+create table usuarios (
+    usuario_id int auto_increment primary key,
+    username varchar(50) not null unique,
+    password_hash varchar(255) not null,
+    rol enum('admin', 'medico', 'recepcion') not null,
+    medico_id int unique, -- vincula si el usuario es un médico
+    
+    constraint fk_usuario_medico
+        foreign key (medico_id) references medico(medico_id)
+) engine=innodb;
+
+
+-- tabla recetas
+create table recetas (
+    receta_id int auto_increment primary key,
+    historia_id int not null,
+    medicamento varchar(255) not null,
+    dosis_instrucciones text not null,
+    
+    constraint fk_receta_historia
+        foreign key (historia_id) references historias_clinicas(historia_id)
+) engine=innodb;
+
+
+-- tabla facturas
+create table facturas (
+    factura_id int auto_increment primary key,
+    cita_id int not null unique,
+    monto_total decimal(10,2) not null,
+    fecha_emision datetime default current_timestamp,
+    estado_pago enum('pendiente', 'pagado', 'anulado') default 'pendiente',
+    
+    constraint fk_factura_cita
+        foreign key (cita_id) references citas_medicas(cita_id)
+) engine=innodb;
