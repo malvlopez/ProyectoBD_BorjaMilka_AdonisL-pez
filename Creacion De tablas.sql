@@ -68,3 +68,6 @@ create table historias_clinicas (
     constraint fk_historia_medico
         foreign key (medico_id) references medico(medico_id)
 ) engine=innodb;
+
+
+--
