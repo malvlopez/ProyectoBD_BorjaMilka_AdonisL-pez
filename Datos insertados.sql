@@ -39,3 +39,28 @@ insert into citas_medicas (paciente_id, medico_id, fecha_cita, hora_cita, estado
 (3,2,'2026-02-01','11:00','completada'),
 (4,3,'2026-01-30','08:30','programada'),
 (5,4,'2026-02-07','09:30','cancelada');
+
+-- Insertar Historias clínicas
+insert into historias_clinicas (paciente_id, medico_id, diagnostico, tratamiento) values
+(1,1,'Gripe común','Reposo, líquidos y paracetamol'),
+(2,2,'Dolor abdominal','Exámenes y control médico'),
+(3,3,'Esguince leve','Reposo y antiinflamatorios'),
+(4,4,'Control general','Chequeo de rutina');
+
+-- Insertar Recetas
+insert into recetas (historia_id, medicamento, dosis_instrucciones) values
+(1,'Paracetamol 500mg','Tomar una tableta cada 8 horas por 3 días'),
+(2,'Omeprazol 20mg','Una cápsula diaria por 7 días'),
+(3,'Ibuprofeno 400mg','Cada 8 horas por 5 días');
+
+-- Insertar Facturas
+insert into facturas (cita_id, monto_total, estado_pago) values
+(1,20.00,'pagado'),
+(3,25.00,'pagado'),
+(4,15.00,'pendiente');
+
+-- Insertar Usuarios
+insert into usuarios (username, password_hash, rol, medico_id) values
+('admin1','hash_admin','admin',NULL),
+('drgarcia','hash_medico','medico',1),
+('recep1','hash_recepcion','recepcion',NULL);
