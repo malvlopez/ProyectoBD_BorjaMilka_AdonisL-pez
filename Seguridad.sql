@@ -10,19 +10,6 @@ SET SQL_SAFE_UPDATES = 1;
 -- Evitar inyeccion de SQL
 
 delimiter //
-create procedure sp_login_seguro(
-    in p_username varchar(50),
-    in p_password varchar(255)
-)
-begin
-    select usuario_id, rol, medico_id 
-    from usuarios 
-    where username = p_username 
-    and password_hash = sha2(p_password, 256);
-end //
-delimiter ;
-
-delimiter //
 create procedure sp_insertar_medico(
     in p_nombre varchar(100),
     in p_apellido varchar(100),
@@ -42,7 +29,6 @@ create function fn_sanitizar_texto(p_cadena varchar(255))
 returns varchar(255)
 deterministic
 begin
-    -- Elimina guiones dobles y puntos y comas que se usan en ataques
     declare v_limpio varchar(255);
     set v_limpio = replace(p_cadena, '--', '');
     set v_limpio = replace(v_limpio, ';', '');
@@ -60,5 +46,20 @@ begin
     where h.paciente_id = p_paciente_id;
 end //
 delimiter ;
+
+
+delimiter //
+create trigger tr_validar_factura_bi
+before insert on facturas
+for each row
+begin
+    if new.monto_total <= 0 then
+        signal sqlstate '45000' 
+        set message_text = 'Error: El monto debe ser un valor numérico positivo.';
+    end if;
+end //
+delimiter ;
+
+
 
 
