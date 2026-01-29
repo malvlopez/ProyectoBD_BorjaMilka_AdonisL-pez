@@ -36,6 +36,9 @@ update facturas
 set estado_pago = 'pagado'
 where factura_id = 6;
 
+update historias_clinicas 
+set diagnostico = 'gripe severa con complicaciones' 
+where historia_id = 1;
 -- --------------------------------------------- Eliminar -------------------------------------------------
 -- Eliminar citas canceladas
 delete from citas_medicas
@@ -50,6 +53,8 @@ and estado_pago = 'anulado';
 delete from paciente
 where paciente_id = 10;
 
+delete from citas_medicas 
+where cita_id = 6;
 -- --------------------------------------------- Subconsultas -------------------------------------------------
 
 
