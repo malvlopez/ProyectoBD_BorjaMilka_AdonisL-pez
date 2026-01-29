@@ -23,7 +23,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '4700a044-d7cd-11f0-9295-84ba59133df4:1-219';
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '4700a044-d7cd-11f0-9295-84ba59133df4:1-237';
 
 --
 -- Current Database: `mysql`
@@ -362,7 +362,7 @@ UNLOCK TABLES;
 --
 
 /*!40000 ALTER TABLE `innodb_index_stats` DISABLE KEYS */;
-INSERT IGNORE INTO `innodb_index_stats` VALUES ('cursos','cursos','PRIMARY','2025-12-19 01:44:49','n_diff_pfx01',7,1,'id'),('cursos','cursos','PRIMARY','2025-12-19 01:44:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','cursos','PRIMARY','2025-12-19 01:44:49','size',1,NULL,'Number of pages in the index'),('cursos','cursos','titulo','2025-12-19 01:44:49','n_diff_pfx01',7,1,'titulo'),('cursos','cursos','titulo','2025-12-19 01:44:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','cursos','titulo','2025-12-19 01:44:49','size',1,NULL,'Number of pages in the index'),('cursos','estudiantes','PRIMARY','2025-12-19 01:22:05','n_diff_pfx01',7,1,'id'),('cursos','estudiantes','PRIMARY','2025-12-19 01:22:05','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','estudiantes','PRIMARY','2025-12-19 01:22:05','size',1,NULL,'Number of pages in the index'),('cursos','estudiantes','email','2025-12-19 01:22:05','n_diff_pfx01',7,1,'email'),('cursos','estudiantes','email','2025-12-19 01:22:05','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','estudiantes','email','2025-12-19 01:22:05','size',1,NULL,'Number of pages in the index'),('cursos','inscripciones','PRIMARY','2025-12-19 01:46:17','n_diff_pfx01',9,1,'id'),('cursos','inscripciones','PRIMARY','2025-12-19 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','inscripciones','PRIMARY','2025-12-19 01:46:17','size',1,NULL,'Number of pages in the index'),('cursos','inscripciones','curso_id','2025-12-19 01:46:17','n_diff_pfx01',6,1,'curso_id'),('cursos','inscripciones','curso_id','2025-12-19 01:46:17','n_diff_pfx02',9,1,'curso_id,id'),('cursos','inscripciones','curso_id','2025-12-19 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','inscripciones','curso_id','2025-12-19 01:46:17','size',1,NULL,'Number of pages in the index'),('cursos','inscripciones','estudiante_id','2025-12-19 01:46:17','n_diff_pfx01',6,1,'estudiante_id'),('cursos','inscripciones','estudiante_id','2025-12-19 01:46:17','n_diff_pfx02',9,1,'estudiante_id,curso_id'),('cursos','inscripciones','estudiante_id','2025-12-19 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','inscripciones','estudiante_id','2025-12-19 01:46:17','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','PRIMARY','2026-01-28 23:53:04','n_diff_pfx01',5,1,'cita_id'),('gestionhospital','citas_medicas','PRIMARY','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','PRIMARY','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','fk_cita_paciente','2026-01-28 23:53:04','n_diff_pfx01',5,1,'paciente_id'),('gestionhospital','citas_medicas','fk_cita_paciente','2026-01-28 23:53:04','n_diff_pfx02',5,1,'paciente_id,cita_id'),('gestionhospital','citas_medicas','fk_cita_paciente','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','fk_cita_paciente','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','idx_citas_fecha','2026-01-28 23:53:04','n_diff_pfx01',5,1,'fecha_cita'),('gestionhospital','citas_medicas','idx_citas_fecha','2026-01-28 23:53:04','n_diff_pfx02',5,1,'fecha_cita,cita_id'),('gestionhospital','citas_medicas','idx_citas_fecha','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','idx_citas_fecha','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','idx_citas_medico','2026-01-28 23:53:04','n_diff_pfx01',4,1,'medico_id'),('gestionhospital','citas_medicas','idx_citas_medico','2026-01-28 23:53:04','n_diff_pfx02',5,1,'medico_id,cita_id'),('gestionhospital','citas_medicas','idx_citas_medico','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','idx_citas_medico','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','medico_id','2026-01-28 23:53:04','n_diff_pfx01',4,1,'medico_id'),('gestionhospital','citas_medicas','medico_id','2026-01-28 23:53:04','n_diff_pfx02',5,1,'medico_id,fecha_cita'),('gestionhospital','citas_medicas','medico_id','2026-01-28 23:53:04','n_diff_pfx03',5,1,'medico_id,fecha_cita,hora_cita'),('gestionhospital','citas_medicas','medico_id','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','medico_id','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','especialidades','PRIMARY','2026-01-28 23:53:27','n_diff_pfx01',5,1,'especialidad_id'),('gestionhospital','especialidades','PRIMARY','2026-01-28 23:53:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','especialidades','PRIMARY','2026-01-28 23:53:27','size',1,NULL,'Number of pages in the index'),('gestionhospital','especialidades','nombre_especialidad','2026-01-28 23:53:27','n_diff_pfx01',5,1,'nombre_especialidad'),('gestionhospital','especialidades','nombre_especialidad','2026-01-28 23:53:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','especialidades','nombre_especialidad','2026-01-28 23:53:27','size',1,NULL,'Number of pages in the index'),('gestionhospital','facturas','PRIMARY','2026-01-28 23:53:17','n_diff_pfx01',3,1,'factura_id'),('gestionhospital','facturas','PRIMARY','2026-01-28 23:53:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','facturas','PRIMARY','2026-01-28 23:53:17','size',1,NULL,'Number of pages in the index'),('gestionhospital','facturas','cita_id','2026-01-28 23:53:17','n_diff_pfx01',3,1,'cita_id'),('gestionhospital','facturas','cita_id','2026-01-28 23:53:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','facturas','cita_id','2026-01-28 23:53:17','size',1,NULL,'Number of pages in the index'),('gestionhospital','facturas','idx_factura_estado','2026-01-28 23:53:17','n_diff_pfx01',2,1,'estado_pago'),('gestionhospital','facturas','idx_factura_estado','2026-01-28 23:53:17','n_diff_pfx02',3,1,'estado_pago,factura_id'),('gestionhospital','facturas','idx_factura_estado','2026-01-28 23:53:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','facturas','idx_factura_estado','2026-01-28 23:53:17','size',1,NULL,'Number of pages in the index'),('gestionhospital','historias_clinicas','PRIMARY','2026-01-28 23:53:04','n_diff_pfx01',4,1,'historia_id'),('gestionhospital','historias_clinicas','PRIMARY','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','historias_clinicas','PRIMARY','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','historias_clinicas','fk_historia_medico','2026-01-28 23:53:04','n_diff_pfx01',4,1,'medico_id'),('gestionhospital','historias_clinicas','fk_historia_medico','2026-01-28 23:53:04','n_diff_pfx02',4,1,'medico_id,historia_id'),('gestionhospital','historias_clinicas','fk_historia_medico','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','historias_clinicas','fk_historia_medico','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','historias_clinicas','idx_historia_paciente','2026-01-28 23:53:04','n_diff_pfx01',4,1,'paciente_id'),('gestionhospital','historias_clinicas','idx_historia_paciente','2026-01-28 23:53:04','n_diff_pfx02',4,1,'paciente_id,historia_id'),('gestionhospital','historias_clinicas','idx_historia_paciente','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','historias_clinicas','idx_historia_paciente','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','medico','PRIMARY','2026-01-28 23:52:57','n_diff_pfx01',5,1,'medico_id'),('gestionhospital','medico','PRIMARY','2026-01-28 23:52:57','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','medico','PRIMARY','2026-01-28 23:52:57','size',1,NULL,'Number of pages in the index'),('gestionhospital','medico','codigo_profesional','2026-01-28 23:52:57','n_diff_pfx01',5,1,'codigo_profesional'),('gestionhospital','medico','codigo_profesional','2026-01-28 23:52:57','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','medico','codigo_profesional','2026-01-28 23:52:57','size',1,NULL,'Number of pages in the index'),('gestionhospital','medico','fk_medico_especialidad','2026-01-28 23:52:57','n_diff_pfx01',5,1,'especialidad_id'),('gestionhospital','medico','fk_medico_especialidad','2026-01-28 23:52:57','n_diff_pfx02',5,1,'especialidad_id,medico_id'),('gestionhospital','medico','fk_medico_especialidad','2026-01-28 23:52:57','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','medico','fk_medico_especialidad','2026-01-28 23:52:57','size',1,NULL,'Number of pages in the index'),('gestionhospital','paciente','PRIMARY','2026-01-28 23:53:04','n_diff_pfx01',10,1,'paciente_id'),('gestionhospital','paciente','PRIMARY','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','paciente','PRIMARY','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','paciente','cedula','2026-01-28 23:53:04','n_diff_pfx01',10,1,'cedula'),('gestionhospital','paciente','cedula','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','paciente','cedula','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','paciente','idx_paciente_cedula','2026-01-28 23:53:04','n_diff_pfx01',10,1,'cedula'),('gestionhospital','paciente','idx_paciente_cedula','2026-01-28 23:53:04','n_diff_pfx02',10,1,'cedula,paciente_id'),('gestionhospital','paciente','idx_paciente_cedula','2026-01-28 23:53:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','paciente','idx_paciente_cedula','2026-01-28 23:53:04','size',1,NULL,'Number of pages in the index'),('gestionhospital','recetas','PRIMARY','2026-01-28 23:53:07','n_diff_pfx01',3,1,'receta_id'),('gestionhospital','recetas','PRIMARY','2026-01-28 23:53:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','recetas','PRIMARY','2026-01-28 23:53:07','size',1,NULL,'Number of pages in the index'),('gestionhospital','recetas','fk_receta_historia','2026-01-28 23:53:07','n_diff_pfx01',3,1,'historia_id'),('gestionhospital','recetas','fk_receta_historia','2026-01-28 23:53:07','n_diff_pfx02',3,1,'historia_id,receta_id'),('gestionhospital','recetas','fk_receta_historia','2026-01-28 23:53:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','recetas','fk_receta_historia','2026-01-28 23:53:07','size',1,NULL,'Number of pages in the index'),('gestionhospital','usuarios','PRIMARY','2026-01-29 01:46:33','n_diff_pfx01',10,1,'usuario_id'),('gestionhospital','usuarios','PRIMARY','2026-01-29 01:46:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','usuarios','PRIMARY','2026-01-29 01:46:33','size',1,NULL,'Number of pages in the index'),('gestionhospital','usuarios','idx_usuario_rol','2026-01-29 01:46:33','n_diff_pfx01',3,1,'rol'),('gestionhospital','usuarios','idx_usuario_rol','2026-01-29 01:46:33','n_diff_pfx02',10,1,'rol,usuario_id'),('gestionhospital','usuarios','idx_usuario_rol','2026-01-29 01:46:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','usuarios','idx_usuario_rol','2026-01-29 01:46:33','size',1,NULL,'Number of pages in the index'),('gestionhospital','usuarios','medico_id','2026-01-29 01:46:33','n_diff_pfx01',6,1,'medico_id'),('gestionhospital','usuarios','medico_id','2026-01-29 01:46:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','usuarios','medico_id','2026-01-29 01:46:33','size',1,NULL,'Number of pages in the index'),('gestionhospital','usuarios','username','2026-01-29 01:46:33','n_diff_pfx01',10,1,'username'),('gestionhospital','usuarios','username','2026-01-29 01:46:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','usuarios','username','2026-01-29 01:46:33','size',1,NULL,'Number of pages in the index'),('jpademo','person','PRIMARY','2026-01-21 01:17:41','n_diff_pfx01',0,1,'id'),('jpademo','person','PRIMARY','2026-01-21 01:17:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jpademo','person','PRIMARY','2026-01-21 01:17:41','size',1,NULL,'Number of pages in the index'),('jpademo','person_seq','GEN_CLUST_INDEX','2026-01-21 01:18:22','n_diff_pfx01',1,1,'DB_ROW_ID'),('jpademo','person_seq','GEN_CLUST_INDEX','2026-01-21 01:18:22','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jpademo','person_seq','GEN_CLUST_INDEX','2026-01-21 01:18:22','size',1,NULL,'Number of pages in the index'),('mysql','component','PRIMARY','2025-12-13 02:41:52','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2025-12-13 02:41:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2025-12-13 02:41:52','size',1,NULL,'Number of pages in the index'),('proyectoexamen','estudiante','PRIMARY','2026-01-26 17:08:17','n_diff_pfx01',12,1,'id'),('proyectoexamen','estudiante','PRIMARY','2026-01-26 17:08:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('proyectoexamen','estudiante','PRIMARY','2026-01-26 17:08:17','size',1,NULL,'Number of pages in the index'),('proyectoexamen','estudiante','UKivr0s9f6jny82r21mso27s7ot','2026-01-26 17:08:17','n_diff_pfx01',12,1,'dni'),('proyectoexamen','estudiante','UKivr0s9f6jny82r21mso27s7ot','2026-01-26 17:08:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('proyectoexamen','estudiante','UKivr0s9f6jny82r21mso27s7ot','2026-01-26 17:08:17','size',1,NULL,'Number of pages in the index'),('sistema_licencias','conductores','PRIMARY','2026-01-03 00:56:42','n_diff_pfx01',1,1,'id'),('sistema_licencias','conductores','PRIMARY','2026-01-03 00:56:42','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','conductores','PRIMARY','2026-01-03 00:56:42','size',1,NULL,'Number of pages in the index'),('sistema_licencias','conductores','cedula','2026-01-03 00:56:42','n_diff_pfx01',1,1,'cedula'),('sistema_licencias','conductores','cedula','2026-01-03 00:56:42','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','conductores','cedula','2026-01-03 00:56:42','size',1,NULL,'Number of pages in the index'),('sistema_licencias','conductores','idx_conductor_cedula','2026-01-03 00:56:42','n_diff_pfx01',1,1,'cedula'),('sistema_licencias','conductores','idx_conductor_cedula','2026-01-03 00:56:42','n_diff_pfx02',1,1,'cedula,id'),('sistema_licencias','conductores','idx_conductor_cedula','2026-01-03 00:56:42','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','conductores','idx_conductor_cedula','2026-01-03 00:56:42','size',1,NULL,'Number of pages in the index'),('sistema_licencias','licencias','PRIMARY','2026-01-02 23:58:16','n_diff_pfx01',0,1,'id'),('sistema_licencias','licencias','PRIMARY','2026-01-02 23:58:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','licencias','PRIMARY','2026-01-02 23:58:16','size',1,NULL,'Number of pages in the index'),('sistema_licencias','licencias','idx_licencia_conductor','2026-01-02 23:58:16','n_diff_pfx01',0,1,'conductor_id'),('sistema_licencias','licencias','idx_licencia_conductor','2026-01-02 23:58:16','n_diff_pfx02',0,1,'conductor_id,id'),('sistema_licencias','licencias','idx_licencia_conductor','2026-01-02 23:58:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','licencias','idx_licencia_conductor','2026-01-02 23:58:16','size',1,NULL,'Number of pages in the index'),('sistema_licencias','licencias','idx_licencia_numero','2026-01-02 23:58:16','n_diff_pfx01',0,1,'numero_licencia'),('sistema_licencias','licencias','idx_licencia_numero','2026-01-02 23:58:16','n_diff_pfx02',0,1,'numero_licencia,id'),('sistema_licencias','licencias','idx_licencia_numero','2026-01-02 23:58:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','licencias','idx_licencia_numero','2026-01-02 23:58:16','size',1,NULL,'Number of pages in the index'),('sistema_licencias','licencias','numero_licencia','2026-01-02 23:58:16','n_diff_pfx01',0,1,'numero_licencia'),('sistema_licencias','licencias','numero_licencia','2026-01-02 23:58:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','licencias','numero_licencia','2026-01-02 23:58:16','size',1,NULL,'Number of pages in the index'),('sistema_licencias','pruebas_psicometricas','PRIMARY','2026-01-02 23:58:20','n_diff_pfx01',0,1,'id'),('sistema_licencias','pruebas_psicometricas','PRIMARY','2026-01-02 23:58:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','pruebas_psicometricas','PRIMARY','2026-01-02 23:58:20','size',1,NULL,'Number of pages in the index'),('sistema_licencias','pruebas_psicometricas','idx_prueba_conductor','2026-01-02 23:58:20','n_diff_pfx01',0,1,'conductor_id'),('sistema_licencias','pruebas_psicometricas','idx_prueba_conductor','2026-01-02 23:58:20','n_diff_pfx02',0,1,'conductor_id,id'),('sistema_licencias','pruebas_psicometricas','idx_prueba_conductor','2026-01-02 23:58:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','pruebas_psicometricas','idx_prueba_conductor','2026-01-02 23:58:20','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2025-12-13 02:41:52','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2025-12-13 02:41:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2025-12-13 02:41:52','size',1,NULL,'Number of pages in the index');
+INSERT IGNORE INTO `innodb_index_stats` VALUES ('cursos','cursos','PRIMARY','2025-12-19 01:44:49','n_diff_pfx01',7,1,'id'),('cursos','cursos','PRIMARY','2025-12-19 01:44:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','cursos','PRIMARY','2025-12-19 01:44:49','size',1,NULL,'Number of pages in the index'),('cursos','cursos','titulo','2025-12-19 01:44:49','n_diff_pfx01',7,1,'titulo'),('cursos','cursos','titulo','2025-12-19 01:44:49','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','cursos','titulo','2025-12-19 01:44:49','size',1,NULL,'Number of pages in the index'),('cursos','estudiantes','PRIMARY','2025-12-19 01:22:05','n_diff_pfx01',7,1,'id'),('cursos','estudiantes','PRIMARY','2025-12-19 01:22:05','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','estudiantes','PRIMARY','2025-12-19 01:22:05','size',1,NULL,'Number of pages in the index'),('cursos','estudiantes','email','2025-12-19 01:22:05','n_diff_pfx01',7,1,'email'),('cursos','estudiantes','email','2025-12-19 01:22:05','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','estudiantes','email','2025-12-19 01:22:05','size',1,NULL,'Number of pages in the index'),('cursos','inscripciones','PRIMARY','2025-12-19 01:46:17','n_diff_pfx01',9,1,'id'),('cursos','inscripciones','PRIMARY','2025-12-19 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','inscripciones','PRIMARY','2025-12-19 01:46:17','size',1,NULL,'Number of pages in the index'),('cursos','inscripciones','curso_id','2025-12-19 01:46:17','n_diff_pfx01',6,1,'curso_id'),('cursos','inscripciones','curso_id','2025-12-19 01:46:17','n_diff_pfx02',9,1,'curso_id,id'),('cursos','inscripciones','curso_id','2025-12-19 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','inscripciones','curso_id','2025-12-19 01:46:17','size',1,NULL,'Number of pages in the index'),('cursos','inscripciones','estudiante_id','2025-12-19 01:46:17','n_diff_pfx01',6,1,'estudiante_id'),('cursos','inscripciones','estudiante_id','2025-12-19 01:46:17','n_diff_pfx02',9,1,'estudiante_id,curso_id'),('cursos','inscripciones','estudiante_id','2025-12-19 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('cursos','inscripciones','estudiante_id','2025-12-19 01:46:17','size',1,NULL,'Number of pages in the index'),('gestionhospital','auditoria_hospital','PRIMARY','2026-01-29 02:50:34','n_diff_pfx01',2,1,'auditoria_id'),('gestionhospital','auditoria_hospital','PRIMARY','2026-01-29 02:50:34','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','auditoria_hospital','PRIMARY','2026-01-29 02:50:34','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','PRIMARY','2026-01-29 02:48:41','n_diff_pfx01',6,1,'cita_id'),('gestionhospital','citas_medicas','PRIMARY','2026-01-29 02:48:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','PRIMARY','2026-01-29 02:48:41','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','fk_cita_paciente','2026-01-29 02:48:41','n_diff_pfx01',5,1,'paciente_id'),('gestionhospital','citas_medicas','fk_cita_paciente','2026-01-29 02:48:41','n_diff_pfx02',6,1,'paciente_id,cita_id'),('gestionhospital','citas_medicas','fk_cita_paciente','2026-01-29 02:48:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','fk_cita_paciente','2026-01-29 02:48:41','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','idx_citas_fecha','2026-01-29 02:48:41','n_diff_pfx01',6,1,'fecha_cita'),('gestionhospital','citas_medicas','idx_citas_fecha','2026-01-29 02:48:41','n_diff_pfx02',6,1,'fecha_cita,cita_id'),('gestionhospital','citas_medicas','idx_citas_fecha','2026-01-29 02:48:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','idx_citas_fecha','2026-01-29 02:48:41','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','idx_citas_medico','2026-01-29 02:48:41','n_diff_pfx01',4,1,'medico_id'),('gestionhospital','citas_medicas','idx_citas_medico','2026-01-29 02:48:41','n_diff_pfx02',6,1,'medico_id,cita_id'),('gestionhospital','citas_medicas','idx_citas_medico','2026-01-29 02:48:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','idx_citas_medico','2026-01-29 02:48:41','size',1,NULL,'Number of pages in the index'),('gestionhospital','citas_medicas','medico_id','2026-01-29 02:48:41','n_diff_pfx01',4,1,'medico_id'),('gestionhospital','citas_medicas','medico_id','2026-01-29 02:48:41','n_diff_pfx02',6,1,'medico_id,fecha_cita'),('gestionhospital','citas_medicas','medico_id','2026-01-29 02:48:41','n_diff_pfx03',6,1,'medico_id,fecha_cita,hora_cita'),('gestionhospital','citas_medicas','medico_id','2026-01-29 02:48:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','citas_medicas','medico_id','2026-01-29 02:48:41','size',1,NULL,'Number of pages in the index'),('gestionhospital','especialidades','PRIMARY','2026-01-28 23:53:27','n_diff_pfx01',5,1,'especialidad_id'),('gestionhospital','especialidades','PRIMARY','2026-01-28 23:53:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','especialidades','PRIMARY','2026-01-28 23:53:27','size',1,NULL,'Number of pages in the index'),('gestionhospital','especialidades','nombre_especialidad','2026-01-28 23:53:27','n_diff_pfx01',5,1,'nombre_especialidad'),('gestionhospital','especialidades','nombre_especialidad','2026-01-28 23:53:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','especialidades','nombre_especialidad','2026-01-28 23:53:27','size',1,NULL,'Number of pages in the index'),('gestionhospital','facturas','PRIMARY','2026-01-28 23:53:17','n_diff_pfx01',3,1,'factura_id'),('gestionhospital','facturas','PRIMARY','2026-01-28 23:53:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','facturas','PRIMARY','2026-01-28 23:53:17','size',1,NULL,'Number of pages in the index'),('gestionhospital','facturas','cita_id','2026-01-28 23:53:17','n_diff_pfx01',3,1,'cita_id'),('gestionhospital','facturas','cita_id','2026-01-28 23:53:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','facturas','cita_id','2026-01-28 23:53:17','size',1,NULL,'Number of pages in the index'),('gestionhospital','facturas','idx_factura_estado','2026-01-28 23:53:17','n_diff_pfx01',2,1,'estado_pago'),('gestionhospital','facturas','idx_factura_estado','2026-01-28 23:53:17','n_diff_pfx02',3,1,'estado_pago,factura_id'),('gestionhospital','facturas','idx_factura_estado','2026-01-28 23:53:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','facturas','idx_factura_estado','2026-01-28 23:53:17','size',1,NULL,'Number of pages in the index'),('gestionhospital','historias_clinicas','PRIMARY','2026-01-29 02:50:24','n_diff_pfx01',6,1,'historia_id'),('gestionhospital','historias_clinicas','PRIMARY','2026-01-29 02:50:24','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','historias_clinicas','PRIMARY','2026-01-29 02:50:24','size',1,NULL,'Number of pages in the index'),('gestionhospital','historias_clinicas','fk_historia_medico','2026-01-29 02:50:24','n_diff_pfx01',4,1,'medico_id'),('gestionhospital','historias_clinicas','fk_historia_medico','2026-01-29 02:50:24','n_diff_pfx02',6,1,'medico_id,historia_id'),('gestionhospital','historias_clinicas','fk_historia_medico','2026-01-29 02:50:24','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','historias_clinicas','fk_historia_medico','2026-01-29 02:50:24','size',1,NULL,'Number of pages in the index'),('gestionhospital','historias_clinicas','idx_historia_paciente','2026-01-29 02:50:24','n_diff_pfx01',4,1,'paciente_id'),('gestionhospital','historias_clinicas','idx_historia_paciente','2026-01-29 02:50:24','n_diff_pfx02',6,1,'paciente_id,historia_id'),('gestionhospital','historias_clinicas','idx_historia_paciente','2026-01-29 02:50:24','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','historias_clinicas','idx_historia_paciente','2026-01-29 02:50:24','size',1,NULL,'Number of pages in the index'),('gestionhospital','medico','PRIMARY','2026-01-28 23:52:57','n_diff_pfx01',5,1,'medico_id'),('gestionhospital','medico','PRIMARY','2026-01-28 23:52:57','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','medico','PRIMARY','2026-01-28 23:52:57','size',1,NULL,'Number of pages in the index'),('gestionhospital','medico','codigo_profesional','2026-01-28 23:52:57','n_diff_pfx01',5,1,'codigo_profesional'),('gestionhospital','medico','codigo_profesional','2026-01-28 23:52:57','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','medico','codigo_profesional','2026-01-28 23:52:57','size',1,NULL,'Number of pages in the index'),('gestionhospital','medico','fk_medico_especialidad','2026-01-28 23:52:57','n_diff_pfx01',5,1,'especialidad_id'),('gestionhospital','medico','fk_medico_especialidad','2026-01-28 23:52:57','n_diff_pfx02',5,1,'especialidad_id,medico_id'),('gestionhospital','medico','fk_medico_especialidad','2026-01-28 23:52:57','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','medico','fk_medico_especialidad','2026-01-28 23:52:57','size',1,NULL,'Number of pages in the index'),('gestionhospital','paciente','PRIMARY','2026-01-29 02:49:02','n_diff_pfx01',10,1,'paciente_id'),('gestionhospital','paciente','PRIMARY','2026-01-29 02:49:02','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','paciente','PRIMARY','2026-01-29 02:49:02','size',1,NULL,'Number of pages in the index'),('gestionhospital','paciente','cedula','2026-01-29 02:49:02','n_diff_pfx01',10,1,'cedula'),('gestionhospital','paciente','cedula','2026-01-29 02:49:02','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','paciente','cedula','2026-01-29 02:49:02','size',1,NULL,'Number of pages in the index'),('gestionhospital','paciente','idx_paciente_cedula','2026-01-29 02:49:02','n_diff_pfx01',10,1,'cedula'),('gestionhospital','paciente','idx_paciente_cedula','2026-01-29 02:49:02','n_diff_pfx02',10,1,'cedula,paciente_id'),('gestionhospital','paciente','idx_paciente_cedula','2026-01-29 02:49:02','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','paciente','idx_paciente_cedula','2026-01-29 02:49:02','size',1,NULL,'Number of pages in the index'),('gestionhospital','recetas','PRIMARY','2026-01-28 23:53:07','n_diff_pfx01',3,1,'receta_id'),('gestionhospital','recetas','PRIMARY','2026-01-28 23:53:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','recetas','PRIMARY','2026-01-28 23:53:07','size',1,NULL,'Number of pages in the index'),('gestionhospital','recetas','fk_receta_historia','2026-01-28 23:53:07','n_diff_pfx01',3,1,'historia_id'),('gestionhospital','recetas','fk_receta_historia','2026-01-28 23:53:07','n_diff_pfx02',3,1,'historia_id,receta_id'),('gestionhospital','recetas','fk_receta_historia','2026-01-28 23:53:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','recetas','fk_receta_historia','2026-01-28 23:53:07','size',1,NULL,'Number of pages in the index'),('gestionhospital','usuarios','PRIMARY','2026-01-29 01:46:33','n_diff_pfx01',10,1,'usuario_id'),('gestionhospital','usuarios','PRIMARY','2026-01-29 01:46:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','usuarios','PRIMARY','2026-01-29 01:46:33','size',1,NULL,'Number of pages in the index'),('gestionhospital','usuarios','idx_usuario_rol','2026-01-29 01:46:33','n_diff_pfx01',3,1,'rol'),('gestionhospital','usuarios','idx_usuario_rol','2026-01-29 01:46:33','n_diff_pfx02',10,1,'rol,usuario_id'),('gestionhospital','usuarios','idx_usuario_rol','2026-01-29 01:46:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','usuarios','idx_usuario_rol','2026-01-29 01:46:33','size',1,NULL,'Number of pages in the index'),('gestionhospital','usuarios','medico_id','2026-01-29 01:46:33','n_diff_pfx01',6,1,'medico_id'),('gestionhospital','usuarios','medico_id','2026-01-29 01:46:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','usuarios','medico_id','2026-01-29 01:46:33','size',1,NULL,'Number of pages in the index'),('gestionhospital','usuarios','username','2026-01-29 01:46:33','n_diff_pfx01',10,1,'username'),('gestionhospital','usuarios','username','2026-01-29 01:46:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('gestionhospital','usuarios','username','2026-01-29 01:46:33','size',1,NULL,'Number of pages in the index'),('jpademo','person','PRIMARY','2026-01-21 01:17:41','n_diff_pfx01',0,1,'id'),('jpademo','person','PRIMARY','2026-01-21 01:17:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jpademo','person','PRIMARY','2026-01-21 01:17:41','size',1,NULL,'Number of pages in the index'),('jpademo','person_seq','GEN_CLUST_INDEX','2026-01-21 01:18:22','n_diff_pfx01',1,1,'DB_ROW_ID'),('jpademo','person_seq','GEN_CLUST_INDEX','2026-01-21 01:18:22','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('jpademo','person_seq','GEN_CLUST_INDEX','2026-01-21 01:18:22','size',1,NULL,'Number of pages in the index'),('mysql','component','PRIMARY','2025-12-13 02:41:52','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2025-12-13 02:41:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2025-12-13 02:41:52','size',1,NULL,'Number of pages in the index'),('proyectoexamen','estudiante','PRIMARY','2026-01-26 17:08:17','n_diff_pfx01',12,1,'id'),('proyectoexamen','estudiante','PRIMARY','2026-01-26 17:08:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('proyectoexamen','estudiante','PRIMARY','2026-01-26 17:08:17','size',1,NULL,'Number of pages in the index'),('proyectoexamen','estudiante','UKivr0s9f6jny82r21mso27s7ot','2026-01-26 17:08:17','n_diff_pfx01',12,1,'dni'),('proyectoexamen','estudiante','UKivr0s9f6jny82r21mso27s7ot','2026-01-26 17:08:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('proyectoexamen','estudiante','UKivr0s9f6jny82r21mso27s7ot','2026-01-26 17:08:17','size',1,NULL,'Number of pages in the index'),('sistema_licencias','conductores','PRIMARY','2026-01-03 00:56:42','n_diff_pfx01',1,1,'id'),('sistema_licencias','conductores','PRIMARY','2026-01-03 00:56:42','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','conductores','PRIMARY','2026-01-03 00:56:42','size',1,NULL,'Number of pages in the index'),('sistema_licencias','conductores','cedula','2026-01-03 00:56:42','n_diff_pfx01',1,1,'cedula'),('sistema_licencias','conductores','cedula','2026-01-03 00:56:42','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','conductores','cedula','2026-01-03 00:56:42','size',1,NULL,'Number of pages in the index'),('sistema_licencias','conductores','idx_conductor_cedula','2026-01-03 00:56:42','n_diff_pfx01',1,1,'cedula'),('sistema_licencias','conductores','idx_conductor_cedula','2026-01-03 00:56:42','n_diff_pfx02',1,1,'cedula,id'),('sistema_licencias','conductores','idx_conductor_cedula','2026-01-03 00:56:42','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','conductores','idx_conductor_cedula','2026-01-03 00:56:42','size',1,NULL,'Number of pages in the index'),('sistema_licencias','licencias','PRIMARY','2026-01-02 23:58:16','n_diff_pfx01',0,1,'id'),('sistema_licencias','licencias','PRIMARY','2026-01-02 23:58:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','licencias','PRIMARY','2026-01-02 23:58:16','size',1,NULL,'Number of pages in the index'),('sistema_licencias','licencias','idx_licencia_conductor','2026-01-02 23:58:16','n_diff_pfx01',0,1,'conductor_id'),('sistema_licencias','licencias','idx_licencia_conductor','2026-01-02 23:58:16','n_diff_pfx02',0,1,'conductor_id,id'),('sistema_licencias','licencias','idx_licencia_conductor','2026-01-02 23:58:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','licencias','idx_licencia_conductor','2026-01-02 23:58:16','size',1,NULL,'Number of pages in the index'),('sistema_licencias','licencias','idx_licencia_numero','2026-01-02 23:58:16','n_diff_pfx01',0,1,'numero_licencia'),('sistema_licencias','licencias','idx_licencia_numero','2026-01-02 23:58:16','n_diff_pfx02',0,1,'numero_licencia,id'),('sistema_licencias','licencias','idx_licencia_numero','2026-01-02 23:58:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','licencias','idx_licencia_numero','2026-01-02 23:58:16','size',1,NULL,'Number of pages in the index'),('sistema_licencias','licencias','numero_licencia','2026-01-02 23:58:16','n_diff_pfx01',0,1,'numero_licencia'),('sistema_licencias','licencias','numero_licencia','2026-01-02 23:58:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','licencias','numero_licencia','2026-01-02 23:58:16','size',1,NULL,'Number of pages in the index'),('sistema_licencias','pruebas_psicometricas','PRIMARY','2026-01-02 23:58:20','n_diff_pfx01',0,1,'id'),('sistema_licencias','pruebas_psicometricas','PRIMARY','2026-01-02 23:58:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','pruebas_psicometricas','PRIMARY','2026-01-02 23:58:20','size',1,NULL,'Number of pages in the index'),('sistema_licencias','pruebas_psicometricas','idx_prueba_conductor','2026-01-02 23:58:20','n_diff_pfx01',0,1,'conductor_id'),('sistema_licencias','pruebas_psicometricas','idx_prueba_conductor','2026-01-02 23:58:20','n_diff_pfx02',0,1,'conductor_id,id'),('sistema_licencias','pruebas_psicometricas','idx_prueba_conductor','2026-01-02 23:58:20','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sistema_licencias','pruebas_psicometricas','idx_prueba_conductor','2026-01-02 23:58:20','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2025-12-13 02:41:52','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2025-12-13 02:41:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2025-12-13 02:41:52','size',1,NULL,'Number of pages in the index');
 /*!40000 ALTER TABLE `innodb_index_stats` ENABLE KEYS */;
 
 --
@@ -370,7 +370,7 @@ INSERT IGNORE INTO `innodb_index_stats` VALUES ('cursos','cursos','PRIMARY','202
 --
 
 /*!40000 ALTER TABLE `innodb_table_stats` DISABLE KEYS */;
-INSERT IGNORE INTO `innodb_table_stats` VALUES ('cursos','cursos','2025-12-19 01:44:49',7,1,1),('cursos','estudiantes','2025-12-19 01:22:05',7,1,1),('cursos','inscripciones','2025-12-19 01:46:17',9,1,2),('gestionhospital','citas_medicas','2026-01-28 23:53:04',5,1,2),('gestionhospital','especialidades','2026-01-28 23:53:27',5,1,1),('gestionhospital','facturas','2026-01-28 23:53:17',3,1,2),('gestionhospital','historias_clinicas','2026-01-28 23:53:04',4,1,2),('gestionhospital','medico','2026-01-28 23:52:57',5,1,2),('gestionhospital','paciente','2026-01-28 23:53:04',10,1,1),('gestionhospital','recetas','2026-01-28 23:53:07',3,1,1),('gestionhospital','usuarios','2026-01-29 01:46:33',10,1,3),('jpademo','person','2026-01-21 01:17:41',0,1,0),('jpademo','person_seq','2026-01-21 01:18:22',1,1,0),('mysql','component','2025-12-13 02:41:52',0,1,0),('proyectoexamen','estudiante','2026-01-26 17:08:17',12,1,1),('sistema_licencias','conductores','2026-01-03 00:56:42',1,1,2),('sistema_licencias','licencias','2026-01-02 23:58:16',0,1,2),('sistema_licencias','pruebas_psicometricas','2026-01-02 23:58:20',0,1,1),('sys','sys_config','2025-12-13 02:41:52',6,1,0);
+INSERT IGNORE INTO `innodb_table_stats` VALUES ('cursos','cursos','2025-12-19 01:44:49',7,1,1),('cursos','estudiantes','2025-12-19 01:22:05',7,1,1),('cursos','inscripciones','2025-12-19 01:46:17',9,1,2),('gestionhospital','auditoria_hospital','2026-01-29 02:50:34',2,1,0),('gestionhospital','citas_medicas','2026-01-29 02:48:41',6,1,4),('gestionhospital','especialidades','2026-01-28 23:53:27',5,1,1),('gestionhospital','facturas','2026-01-28 23:53:17',3,1,2),('gestionhospital','historias_clinicas','2026-01-29 02:50:24',6,1,2),('gestionhospital','medico','2026-01-28 23:52:57',5,1,2),('gestionhospital','paciente','2026-01-29 02:49:02',10,1,2),('gestionhospital','recetas','2026-01-28 23:53:07',3,1,1),('gestionhospital','usuarios','2026-01-29 01:46:33',10,1,3),('jpademo','person','2026-01-21 01:17:41',0,1,0),('jpademo','person_seq','2026-01-21 01:18:22',1,1,0),('mysql','component','2025-12-13 02:41:52',0,1,0),('proyectoexamen','estudiante','2026-01-26 17:08:17',12,1,1),('sistema_licencias','conductores','2026-01-03 00:56:42',1,1,2),('sistema_licencias','licencias','2026-01-02 23:58:16',0,1,2),('sistema_licencias','pruebas_psicometricas','2026-01-02 23:58:20',0,1,1),('sys','sys_config','2025-12-13 02:41:52',6,1,0);
 /*!40000 ALTER TABLE `innodb_table_stats` ENABLE KEYS */;
 
 --
@@ -1186,6 +1186,34 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/ `gestionhospital` /*!40100 DEFAULT CHAR
 USE `gestionhospital`;
 
 --
+-- Table structure for table `auditoria_hospital`
+--
+
+DROP TABLE IF EXISTS `auditoria_hospital`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `auditoria_hospital` (
+  `auditoria_id` int NOT NULL AUTO_INCREMENT,
+  `tabla_afectada` varchar(50) NOT NULL,
+  `accion` enum('insert','update','delete') NOT NULL,
+  `usuario` varchar(100) DEFAULT NULL,
+  `fecha_evento` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `detalles` text,
+  PRIMARY KEY (`auditoria_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auditoria_hospital`
+--
+
+LOCK TABLES `auditoria_hospital` WRITE;
+/*!40000 ALTER TABLE `auditoria_hospital` DISABLE KEYS */;
+INSERT INTO `auditoria_hospital` VALUES (1,'paciente','insert','root@localhost','2026-01-29 02:48:26','se registro paciente con cedula: 0934567891'),(2,'historias_clinicas','update','root@localhost','2026-01-29 02:50:24','historia id: 1 | diagnostico anterior: Gripe común');
+/*!40000 ALTER TABLE `auditoria_hospital` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `citas_medicas`
 --
 
@@ -1207,7 +1235,7 @@ CREATE TABLE `citas_medicas` (
   KEY `idx_citas_medico` (`medico_id`),
   CONSTRAINT `fk_cita_medico` FOREIGN KEY (`medico_id`) REFERENCES `medico` (`medico_id`),
   CONSTRAINT `fk_cita_paciente` FOREIGN KEY (`paciente_id`) REFERENCES `paciente` (`paciente_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1216,9 +1244,28 @@ CREATE TABLE `citas_medicas` (
 
 LOCK TABLES `citas_medicas` WRITE;
 /*!40000 ALTER TABLE `citas_medicas` DISABLE KEYS */;
-INSERT INTO `citas_medicas` VALUES (1,1,1,'2026-01-28','09:00:00','programada',NULL),(2,2,1,'2026-02-12','10:00:00','programada',NULL),(3,3,2,'2026-02-01','11:00:00','completada',NULL),(4,4,3,'2026-01-30','08:30:00','programada',NULL),(5,5,4,'2026-02-07','09:30:00','cancelada',NULL);
+INSERT INTO `citas_medicas` VALUES (1,1,1,'2026-01-28','09:00:00','programada',NULL),(2,2,1,'2026-02-12','10:00:00','programada',NULL),(3,3,2,'2026-02-01','11:00:00','completada',NULL),(4,4,3,'2026-01-30','08:30:00','programada',NULL),(5,5,4,'2026-02-07','09:30:00','cancelada',NULL),(6,1,2,'2026-02-10','10:30:00','cancelada',NULL);
 /*!40000 ALTER TABLE `citas_medicas` ENABLE KEYS */;
 UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `tr_auditar_cita_del` BEFORE DELETE ON `citas_medicas` FOR EACH ROW begin
+    insert into auditoria_hospital (tabla_afectada, accion, usuario, detalles)
+    values ('citas_medicas', 'delete', user(), 
+            concat('cita eliminada id: ', old.cita_id, ' del paciente id: ', old.paciente_id));
+end */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Table structure for table `especialidades`
@@ -1262,7 +1309,7 @@ CREATE TABLE `facturas` (
   UNIQUE KEY `cita_id` (`cita_id`),
   KEY `idx_factura_estado` (`estado_pago`),
   CONSTRAINT `fk_factura_cita` FOREIGN KEY (`cita_id`) REFERENCES `citas_medicas` (`cita_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1271,7 +1318,7 @@ CREATE TABLE `facturas` (
 
 LOCK TABLES `facturas` WRITE;
 /*!40000 ALTER TABLE `facturas` DISABLE KEYS */;
-INSERT INTO `facturas` VALUES (1,1,20.00,'2026-01-28 18:52:57','pagado'),(2,3,25.00,'2026-01-28 18:52:57','pagado'),(3,4,15.00,'2026-01-28 18:52:57','pendiente');
+INSERT INTO `facturas` VALUES (1,1,20.00,'2026-01-28 18:52:57','pagado'),(2,3,25.00,'2026-01-28 18:52:57','pagado'),(3,4,15.00,'2026-01-28 18:52:57','pendiente'),(4,6,45.50,'2026-01-28 21:48:26','pendiente');
 /*!40000 ALTER TABLE `facturas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -1314,7 +1361,7 @@ CREATE TABLE `historias_clinicas` (
   KEY `idx_historia_paciente` (`paciente_id`),
   CONSTRAINT `fk_historia_medico` FOREIGN KEY (`medico_id`) REFERENCES `medico` (`medico_id`),
   CONSTRAINT `fk_historia_paciente` FOREIGN KEY (`paciente_id`) REFERENCES `paciente` (`paciente_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1323,9 +1370,30 @@ CREATE TABLE `historias_clinicas` (
 
 LOCK TABLES `historias_clinicas` WRITE;
 /*!40000 ALTER TABLE `historias_clinicas` DISABLE KEYS */;
-INSERT INTO `historias_clinicas` VALUES (1,1,1,'2026-01-28 23:52:57','Gripe común','Reposo, líquidos y paracetamol'),(2,2,2,'2026-01-28 23:52:57','Dolor abdominal','Exámenes y control médico'),(3,3,3,'2026-01-28 23:52:57','Esguince leve','Reposo y antiinflamatorios'),(4,4,4,'2026-01-28 23:52:57','Control general','Chequeo de rutina'),(5,1,1,'2026-01-29 01:09:32','Infección respiratoria leve','Reposo y medicación por 5 días');
+INSERT INTO `historias_clinicas` VALUES (1,1,1,'2026-01-28 23:52:57','gripe severa con complicaciones','Reposo, líquidos y paracetamol'),(2,2,2,'2026-01-28 23:52:57','Dolor abdominal','Exámenes y control médico'),(3,3,3,'2026-01-28 23:52:57','Esguince leve','Reposo y antiinflamatorios'),(4,4,4,'2026-01-28 23:52:57','Control general','Chequeo de rutina'),(5,1,1,'2026-01-29 01:09:32','Infección respiratoria leve','Reposo y medicación por 5 días'),(6,1,1,'2026-01-29 02:48:26','Gripe','Reposo e hidratación');
 /*!40000 ALTER TABLE `historias_clinicas` ENABLE KEYS */;
 UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `tr_auditar_historia_upd` AFTER UPDATE ON `historias_clinicas` FOR EACH ROW begin
+    if old.diagnostico <> new.diagnostico then
+        insert into auditoria_hospital (tabla_afectada, accion, usuario, detalles)
+        values ('historias_clinicas', 'update', user(), 
+                concat('historia id: ', old.historia_id, ' | diagnostico anterior: ', old.diagnostico));
+    end if;
+end */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Table structure for table `medico`
@@ -1377,7 +1445,7 @@ CREATE TABLE `paciente` (
   UNIQUE KEY `cedula` (`cedula`),
   KEY `idx_paciente_cedula` (`cedula`),
   CONSTRAINT `chk_cedula_min` CHECK ((length(`cedula`) >= 9))
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1386,9 +1454,27 @@ CREATE TABLE `paciente` (
 
 LOCK TABLES `paciente` WRITE;
 /*!40000 ALTER TABLE `paciente` DISABLE KEYS */;
-INSERT INTO `paciente` VALUES (1,'1702030401','Randy','Paez','1998-05-10','m','0981310131'),(2,'1702030402','Karla','Guachamin','2000-07-20','f','0991928220'),(3,'0902030403','Pavel','Valencia','1995-02-15','m','0911393633'),(4,'1702030404','Camila','Noroña','2002-09-01','f','0994104794'),(5,'0902030405','Danny','Aguilar','1988-11-30','m','0935485005'),(6,'1702030406','Katherine','	Henao','1999-04-18','f','0992460626'),(7,'1702030407','Moises','Narvaez','1990-06-25','m','0976737857'),(8,'1702030408','Mabel','Choez','2001-01-12','f','0938088088'),(9,'0902030409','Esteban','Luzuriaga','1997-08-09','m','0949569989'),(10,'1702030410','Fabianna','Murillo','2003-12-05','f','0987261171');
+INSERT INTO `paciente` VALUES (1,'1702030401','Randy','Paez','1998-05-10','m','0981310131'),(2,'1702030402','Karla','Guachamin','2000-07-20','f','0991928220'),(3,'0902030403','Pavel','Valencia','1995-02-15','m','0911393633'),(4,'1702030404','Camila','Noroña','2002-09-01','f','0994104794'),(5,'0902030405','Danny','Aguilar','1988-11-30','m','0935485005'),(6,'1702030406','Katherine','	Henao','1999-04-18','f','0992460626'),(7,'1702030407','Moises','Narvaez','1990-06-25','m','0976737857'),(8,'1702030408','Mabel','Choez','2001-01-12','f','0938088088'),(9,'0902030409','Esteban','Luzuriaga','1997-08-09','m','0949569989'),(11,'0934567891','Betty','Quinto','1974-01-10','f','0985837201');
 /*!40000 ALTER TABLE `paciente` ENABLE KEYS */;
 UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `tr_auditar_paciente_ins` AFTER INSERT ON `paciente` FOR EACH ROW begin
+    insert into auditoria_hospital (tabla_afectada, accion, usuario, detalles)
+    values ('paciente', 'insert', user(), concat('se registro paciente con cedula: ', new.cedula));
+end */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Table structure for table `recetas`
@@ -1660,6 +1746,63 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_agendar_cita_completa` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_agendar_cita_completa`(
+    in p_paciente_id int,
+    in p_medico_id int,
+    in p_fecha date,
+    in p_hora time,
+    in p_monto decimal(10,2)
+)
+begin
+    declare exit handler for sqlexception begin rollback; end;
+
+    start transaction;
+        insert into citas_medicas (paciente_id, medico_id, fecha_cita, hora_cita)
+        values (p_paciente_id, p_medico_id, p_fecha, p_hora);
+        
+        insert into facturas (cita_id, monto_total)
+        values (last_insert_id(), p_monto);
+    commit;
+end ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_consultar_expediente` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_consultar_expediente`(in p_paciente_id int)
+begin
+    select h.fecha_registro, m.apellido as medico, h.diagnostico, r.medicamento
+    from historias_clinicas h
+    left join recetas r on h.historia_id = r.historia_id
+    join medico m on h.medico_id = m.medico_id
+    where h.paciente_id = p_paciente_id
+    order by h.fecha_registro desc;
+end ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!50003 DROP PROCEDURE IF EXISTS `sp_consultar_historia_paciente` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
@@ -1677,6 +1820,37 @@ begin
     from historias_clinicas h
     join medico m on h.medico_id = m.medico_id
     where h.paciente_id = p_paciente_id;
+end ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_crear_medico_acceso` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_crear_medico_acceso`(
+    in p_nombre varchar(100), in p_apellido varchar(100), in p_codigo varchar(20),
+    in p_email varchar(100), in p_especialidad_id int, in p_username varchar(50),
+    in p_password varchar(255)
+)
+begin
+    declare exit handler for sqlexception begin rollback; end;
+
+    start transaction;
+        insert into medico (nombre, apellido, codigo_profesional, email, especialidad_id)
+        values (p_nombre, p_apellido, p_codigo, p_email, p_especialidad_id);
+        
+        insert into usuarios (username, password_hash, rol, medico_id)
+        values (p_username, sha2(p_password, 256), 'medico', last_insert_id());
+    commit;
 end ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1729,6 +1903,35 @@ begin
     from usuarios 
     where username = p_username 
     and password_hash = sha2(p_password, 256);
+end ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `sp_registrar_atencion_completa` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_registrar_atencion_completa`(
+    in p_paciente_id int, in p_medico_id int, in p_diagnostico text,
+	in p_tratamiento text, in p_medicamento varchar(255), in p_dosis text
+)
+begin
+    declare exit handler for sqlexception begin rollback; end;
+    start transaction;
+        insert into historias_clinicas (paciente_id, medico_id, diagnostico, tratamiento)
+        values (p_paciente_id, p_medico_id, p_diagnostico, p_tratamiento);
+
+        insert into recetas (historia_id, medicamento, dosis_instrucciones)
+        values (last_insert_id(), p_medicamento, p_dosis);
+    commit;
 end ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2089,4 +2292,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-28 21:15:12
+-- Dump completed on 2026-01-28 21:53:21
