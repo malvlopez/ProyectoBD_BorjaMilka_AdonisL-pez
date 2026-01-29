@@ -55,7 +55,7 @@ create table citas_medicas (
 
 -- tabla historias_clinicas
 create table historias_clinicas (
-    historia_id int auto_increment primary key,
+    historia_id int auto_increment primary key,	
     paciente_id int not null,
     medico_id int not null,
     fecha_registro timestamp default current_timestamp,
