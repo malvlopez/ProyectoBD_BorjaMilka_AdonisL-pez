@@ -106,3 +106,27 @@ create table facturas (
     constraint fk_factura_cita
         foreign key (cita_id) references citas_medicas(cita_id)
 ) engine=innodb;
+
+-- Eliminacion de medico
+delimiter //
+create trigger tr_auditar_medico_del
+before delete on medico
+for each row
+begin
+    insert into auditoria_hospital (tabla_afectada, accion, usuario, detalles)
+    values ('medico', 'delete', user(), concat('eliminado médico: ', old.apellido, ' código: ', old.codigo_profesional));
+end //
+delimiter ;
+
+-- auditar eliminación de usuario
+delimiter //
+create trigger tr_auditar_usuario_del
+before delete on usuarios
+for each row
+begin
+    insert into auditoria_hospital (tabla_afectada, accion, usuario, detalles)
+    values ('usuarios', 'delete', user(), concat('eliminado acceso de usuario: ', old.username));
+end //
+delimiter ;
+
+

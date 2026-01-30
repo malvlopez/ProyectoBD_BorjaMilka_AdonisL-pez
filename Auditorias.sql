@@ -1,4 +1,6 @@
 
+use gestionhospital;
+
 create table auditoria_hospital (
     auditoria_id int auto_increment primary key,
     tabla_afectada varchar(50) not null,
@@ -51,3 +53,55 @@ end //
 delimiter ;
 
 select * from auditoria_hospital;
+
+
+-- Auditoría de Anulación de Facturas
+delimiter //
+create trigger tr_auditar_factura_anulacion
+after update on facturas
+for each row
+begin
+    if old.estado_pago <> 'anulado' and new.estado_pago = 'anulado' then
+        insert into auditoria_hospital (tabla_afectada, accion, usuario, detalles)
+        values ('facturas', 'update', user(), 
+                concat('ALERTA: Factura ID ', old.factura_id, ' ANULADA. Monto: $', old.monto_total));
+    end if;
+end //
+delimiter ;
+
+-- Gestion de cambio de contraseñas
+
+DELIMITER //
+CREATE TRIGGER tr_auditar_password_update
+AFTER UPDATE ON usuarios
+FOR EACH ROW
+BEGIN
+    IF old.password_hash <> new.password_hash THEN
+        INSERT INTO auditoria_hospital (tabla_afectada, accion, usuario, detalles)
+        VALUES ('usuarios', 'update', USER(), 
+                CONCAT('Se cambió la contraseña del usuario: ', new.username));
+    END IF;
+END //
+DELIMITER ;
+
+-- Auditar Medicos
+delimiter //
+create trigger tr_auditar_medico_ins
+after insert on medico
+for each row
+begin
+    insert into auditoria_hospital (tabla_afectada, accion, usuario, detalles)
+    values ('medico', 'insert', user(), concat('nuevo médico registrado: ', new.apellido, ' | código: ', new.codigo_profesional));
+end //
+delimiter ;
+
+-- auditar nueva receta
+delimiter //
+create trigger tr_auditar_receta_ins
+after insert on recetas
+for each row
+begin
+    insert into auditoria_hospital (tabla_afectada, accion, usuario, detalles)
+    values ('recetas', 'insert', user(), concat('receta creada para historia id: ', new.historia_id));
+end //
+delimiter ;
