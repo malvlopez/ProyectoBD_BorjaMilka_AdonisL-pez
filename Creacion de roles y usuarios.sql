@@ -5,6 +5,7 @@ create role 'rol_admin', 'rol_medico', 'rol_recepcion';
 
 grant all privileges on gestionhospital.* to 'rol_admin';
 
+
 grant select, insert, update on gestionhospital.paciente to 'rol_medico';
 grant select, insert, update on gestionhospital.historias_clinicas to 'rol_medico';
 grant select, insert, update on gestionhospital.recetas to 'rol_medico';
@@ -13,6 +14,7 @@ grant select on gestionhospital.especialidades to 'rol_medico';
 grant select, insert, update on gestionhospital.citas_medicas to 'rol_recepcion';
 grant select, insert, update on gestionhospital.facturas to 'rol_recepcion';
 grant select on gestionhospital.paciente to 'rol_recepcion';
+
 
 -- Creacion de usuarios doctores
 create user 'pcarrillo'@'localhost' identified by 'PassDoc2026!';
